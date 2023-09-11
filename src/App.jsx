@@ -42,7 +42,10 @@ function App() {
         <span className="font-mono text-blue-300">Tailwind</span>
       </h1>
       <div className="p-8">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          onClick={() => setCount((count) => count + 1)}
+          className="bg-slate-800 rounded-lg px-2 py-4 border-solid border border-slate-300 hover:border-green-500 transition-all duration-300 focus-visible:outline-4px cursor-pointer"
+        >
           count is {count}
         </button>
         <p>
